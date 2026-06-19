@@ -53,3 +53,19 @@ body {
   text-decoration: none;
   border-radius: 5px;
 }
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+}
+
+.about-container img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
