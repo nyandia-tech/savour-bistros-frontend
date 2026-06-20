@@ -1,81 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Savour Bistros</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Savour Bistros — Modern Fine Dining</title>
+  <meta name="description" content="An intimate bistro serving seasonal, chef-crafted plates and curated wines in a warm, candlelit setting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Savour Bistros</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome to Savour Bistros</h1>
-        <p>Experience fine dining with a modern touch</p>
-        <a href="#menu" class="btn">Explore Menu</a>
-      </div>
-    </section>
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="logo">Savour <span>Bistros</span></a>
+      <nav>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn--primary nav__cta">Reserve</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
-  <main>
-    <section id="about" class="about">
-      <div class="about-container">
-        <img src="assets/images/about.jpg" alt="About Savour Bistros">
-        <div class="about-text">
-          <h2>About Us</h2>
-          <p>Savour Bistros blends tradition and innovation to bring you unforgettable dining experiences. Our chefs craft dishes with passion, using fresh ingredients and bold flavors.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero__bg" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Elegant restaurant dining room" />
+    <div class="hero__overlay"></div>
+    <div class="hero__content reveal">
+      <p class="eyebrow eyebrow--light">Est. 2012 — Fine Dining</p>
+      <h1>A taste of timeless elegance</h1>
+      <p class="hero__lede">Seasonal plates, curated wines, and an atmosphere crafted for moments that linger.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Explore the Menu</a>
+        <a href="#contact" class="btn btn--ghost">Book a Table</a>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container about">
+      <div class="about__image reveal">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" alt="Chef plating a dish" />
+        <div class="about__badge">
+          <p class="num">12+</p>
+          <p class="lbl">Years of craft</p>
         </div>
       </div>
-    </section>
-
-    <section id="menu" class="menu">
-      <h2>Our Specials</h2>
+      <div class="about__text reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2>Where every plate tells a story</h2>
+        <p>Born from a love of seasonal ingredients and quiet evenings shared around a table, Savour Bistros brings together classical technique and modern restraint. Our chefs source from local farms and waters, letting the produce speak with clarity.</p>
+        <p>From the first amuse-bouche to the final pour, every detail is considered — so you can simply be present.</p>
+        <a href="#menu" class="link-arrow">Discover our menu <span>→</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- Menu -->
+  <section id="menu" class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Signature Dishes</p>
+        <h2>Crafted with intention</h2>
+        <p class="muted">A glimpse of the seasonal menu — refreshed each quarter.</p>
+      </div>
       <div class="menu-grid">
-        <div class="menu-item">
-          <img src="assets/images/dish1.jpg" alt="Dish 1">
-          <h3>Grilled Salmon</h3>
-          <p>Delicious grilled salmon with lemon butter sauce.</p>
-        </div>
-        <div class="menu-item">
-          <img src="assets/images/dish2.jpg" alt="Dish 2">
-          <h3>Steak Frites</h3>
-          <p>Juicy steak served with crispy fries and herb butter.</p>
-        </div>
-        <!-- Add more menu items as needed -->
+        <article class="dish reveal">
+          <div class="dish__img"><img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=800&q=80" alt="Seared scallops" /></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Seared Scallops</h3><span class="price">$28</span></div>
+            <p>Pan-seared diver scallops with citrus beurre blanc and micro herbs.</p>
+          </div>
+        </article>
+        <article class="dish reveal">
+          <div class="dish__img"><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=800&q=80" alt="Wagyu tenderloin" /></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Wagyu Tenderloin</h3><span class="price">$48</span></div>
+            <p>Grass-fed wagyu with truffle jus, parsnip purée and seasonal roots.</p>
+          </div>
+        </article>
+        <article class="dish reveal">
+          <div class="dish__img"><img src="https://images.unsplash.com/photo-1633964913849-96bb09cbb0ee?auto=format&fit=crop&w=800&q=80" alt="Truffle risotto" /></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Black Truffle Risotto</h3><span class="price">$32</span></div>
+            <p>Carnaroli rice slow-cooked with aged parmesan and shaved truffle.</p>
+          </div>
+        </article>
+        <article class="dish reveal">
+          <div class="dish__img"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Molten chocolate cake" /></div>
+          <div class="dish__body">
+            <div class="dish__row"><h3>Molten Chocolate</h3><span class="price">$14</span></div>
+            <p>Warm dark chocolate cake, gold leaf, fresh berries and cocoa dust.</p>
+          </div>
+        </article>
       </div>
-    </section>
-
-    <section id="gallery" class="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img src="assets/images/gallery1.jpg" alt="Gallery 1">
-        <img src="assets/images/gallery2.jpg" alt="Gallery 2">
-        <img src="assets/images/gallery3.jpg" alt="Gallery 3">
-        <img src="assets/images/gallery4.jpg" alt="Gallery 4">
+    </div>
+  </section>
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Moments from the bistro</h2>
       </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <div class="gallery">
+        <div class="gallery__item gallery__item--tall reveal"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior" /></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Wine pour" /></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80" alt="Plated dish" /></div>
+        <div class="gallery__item reveal"><img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&q=80" alt="Candlelit table" /></div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="section section--alt">
+    <div class="container contact">
+      <div class="reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Reserve your evening</h2>
+        <p class="muted">Whether it's an intimate dinner or a private gathering, we'd love to host you.</p>
+        <ul class="contact__list">
+          <li><span class="ico">📍</span><div><strong>Location</strong><p>42 Vine Street, Downtown</p></div></li>
+          <li><span class="ico">📞</span><div><strong>Phone</strong><p>+1 (555) 234-9087</p></div></li>
+          <li><span class="ico">✉️</span><div><strong>Email</strong><p>hello@savourbistros.com</p></div></li>
+        </ul>
+      </div>
+      <form class="form reveal" id="contactForm">
+        <div class="field"><label for="name">Name</label><input id="name" required /></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" required /></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" rows="4" required></textarea></div>
+        <button type="submit" class="btn btn--primary btn--block" id="submitBtn">Send Message</button>
       </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2026 Savour Bistros. All rights reserved.</p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="logo logo--sm">Savour <span>Bistros</span></p>
+      <p class="muted">© <span id="year"></span> Savour Bistros. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
