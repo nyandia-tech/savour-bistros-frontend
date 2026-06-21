@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Savour Bistros</title>
+  <meta name="description" content="About Savour Bistros—our story, philosophy, and dining experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="logo">Savour <span>Bistros</span></a>
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--primary nav__cta">Reserve</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Secondary navigation">
+    <div class="side-nav__inner container">
+      <nav>
+        <ul class="side-nav__links" id="sideNavLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="side-nav__caption">Discover our story, seasonal approach, and what makes our dining experience special.</p>
+    </div>
+  </aside>
+
+  <main class="page-content">
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Our Story</p>
+        <h2>Where every plate tells a story</h2>
+        <div class="about">
+          <div class="about__image reveal">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" alt="Chef plating a dish" />
+            <div class="about__badge">
+              <p class="num">12+</p>
+              <p class="lbl">Years of craft</p>
+            </div>
+          </div>
+          <div class="about__text reveal">
+            <p>Born from a love of seasonal ingredients and intimate evenings, Savour Bistros blends classic technique with a warm, modern atmosphere. Every element is crafted to make each meal feel special.</p>
+            <p>Our team works with coastal farms and local producers to create menus that shift with the seasons, letting the freshest ingredients shine in every dish.</p>
+            <a href="menu.html" class="link-arrow">Browse the menu <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="logo logo--sm">Savour <span>Bistros</span></p>
+      <p class="muted">© <span id="year"></span> Savour Bistros. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -15,21 +15,30 @@
   <!-- Nav -->
   <header class="nav" id="nav">
     <div class="nav__inner container">
-      <a href="#" class="logo">Savour <span>Bistros</span></a>
-      <nav>
-        <ul class="nav__links" id="navLinks">
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#contact" class="btn btn--primary nav__cta">Reserve</a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="index.html" class="logo">Savour <span>Bistros</span></a>
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--primary nav__cta">Reserve</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
+  <aside class="side-nav" id="sideNav" aria-label="Secondary navigation">
+    <div class="side-nav__inner container">
+      <nav>
+        <ul class="side-nav__links" id="sideNavLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="side-nav__caption">Discover our story, signature menu, gallery, and easy reservations.</p>
+    </div>
+  </aside>
+  <main class="page-content">
   <!-- Hero -->
   <section class="hero">
     <img class="hero__bg" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Elegant restaurant dining room" />
@@ -39,8 +48,8 @@
       <h1>A taste of timeless elegance</h1>
       <p class="hero__lede">Seasonal plates, curated wines, and an atmosphere crafted for moments that linger.</p>
       <div class="hero__actions">
-        <a href="#menu" class="btn btn--primary">Explore the Menu</a>
-        <a href="#contact" class="btn btn--ghost">Book a Table</a>
+        <a href="menu.html" class="btn btn--primary">Explore the Menu</a>
+        <a href="contact.html" class="btn btn--ghost">Book a Table</a>
       </div>
     </div>
   </section>
@@ -75,14 +84,14 @@
         <article class="dish reveal">
           <div class="dish__img"><img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=800&q=80" alt="Seared scallops" /></div>
           <div class="dish__body">
-            <div class="dish__row"><h3>Seared Scallops</h3><span class="price">$28</span></div>
+            <div class="dish__row"><h3>Seared Scallops</h3><span class="price">Ksh 280</span></div>
             <p>Pan-seared diver scallops with citrus beurre blanc and micro herbs.</p>
           </div>
         </article>
         <article class="dish reveal">
           <div class="dish__img"><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=800&q=80" alt="Wagyu tenderloin" /></div>
           <div class="dish__body">
-            <div class="dish__row"><h3>Wagyu Tenderloin</h3><span class="price">$48</span></div>
+            <div class="dish__row"><h3>Wagyu Tenderloin</h3><span class="price">Ksh 480</span></div>
             <p>Grass-fed wagyu with truffle jus, parsnip purée and seasonal roots.</p>
           </div>
         </article>
@@ -92,14 +101,14 @@
             alt="Truffle risotto" />
           </div>
           <div class="dish__body">
-            <div class="dish__row"><h3>Black Truffle Risotto</h3><span class="price">$32</span></div>
+            <div class="dish__row"><h3>Black Truffle Risotto</h3><span class="price">Ksh 320</span></div>
             <p>Carnaroli rice slow-cooked with aged parmesan and shaved truffle.</p>
           </div>
         </article>
         <article class="dish reveal">
           <div class="dish__img"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Molten chocolate cake" /></div>
           <div class="dish__body">
-            <div class="dish__row"><h3>Molten Chocolate</h3><span class="price">$14</span></div>
+            <div class="dish__row"><h3>Molten Chocolate</h3><span class="price">Ksh 140</span></div>
             <p>Warm dark chocolate cake, gold leaf, fresh berries and cocoa dust.</p>
           </div>
         </article>
@@ -129,8 +138,8 @@
         <h2>Reserve your evening</h2>
         <p class="muted">Whether it's an intimate dinner or a private gathering, we'd love to host you.</p>
         <ul class="contact__list">
-          <li><span class="ico"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><div><strong>Location</strong><p>42 Vine Street, Downtown</p></div></li>
-          <li><span class="ico"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><div><strong>Phone</strong><p>+1 (555) 234-9087</p></div></li>
+          <li><span class="ico"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><div><strong>Location</strong><p>oldtown , Mombasa</p></div></li>
+          <li><span class="ico"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><div><strong>Phone</strong><p>+254 700 000 000</p></div></li>
           <li><span class="ico"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><div><strong>Email</strong><p>hello@savourbistros.com</p></div></li>
         </ul>
       </div>
@@ -142,6 +151,7 @@
       </form>
     </div>
   </section>
+  </main>
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">

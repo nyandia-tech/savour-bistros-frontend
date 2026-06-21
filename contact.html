@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Savour Bistros</title>
+  <meta name="description" content="Contact Savour Bistros for reservations, questions, and private dining inquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="logo">Savour <span>Bistros</span></a>
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--primary nav__cta">Reserve</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Secondary navigation">
+    <div class="side-nav__inner container">
+      <nav>
+        <ul class="side-nav__links" id="sideNavLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="side-nav__caption">Reserve a table, ask a question, or plan a private dining event.</p>
+    </div>
+  </aside>
+
+  <main class="page-content">
+    <section class="section section--alt">
+      <div class="container contact">
+        <div class="reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Reserve your evening</h2>
+          <p class="muted">Whether it’s an intimate dinner or a private gathering, we'd love to host you.</p>
+          <ul class="contact__list">
+            <li><span class="ico"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><div><strong>Location</strong><p>Oldtown, Mombasa</p></div></li>
+            <li><span class="ico"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><div><strong>Phone</strong><p>+254 700 000 000</p></div></li>
+            <li><span class="ico"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><div><strong>Email</strong><p>hello@savourbistros.com</p></div></li>
+          </ul>
+        </div>
+        <form class="form reveal" id="contactForm">
+          <div class="field"><label for="name">Name</label><input id="name" required /></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" required /></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" rows="4" required></textarea></div>
+          <button type="submit" class="btn btn--primary btn--block" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="logo logo--sm">Savour <span>Bistros</span></p>
+      <p class="muted">© <span id="year"></span> Savour Bistros. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
