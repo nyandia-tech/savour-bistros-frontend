@@ -1,7 +1,7 @@
 # savour-bistros-frontend
 
 # Savour Bistros
-A modern, elegant, and responsive single-page restaurant website built with vanilla HTML, CSS, and JavaScript.
+A modern, elegant, and responsive restaurant website built with vanilla HTML, CSS, and JavaScript. Initially developed as a single page project, it has now been restructured into a multi page layout with enhanced navigation.
 ## Live Preview
 Open `index.html` in any modern web browser. No build step or server is required.
 ## About This Project
@@ -19,14 +19,19 @@ Although local image files were generated and placed in an `assets/` folder duri
 2. **File Size & Portability** — The zip/download package stays lightweight. High-resolution photography can add several megabytes; hot-linking to optimized, CDN-hosted images keeps the codebase small and fast to share.
 3. **Consistent Quality** — Unsplash serves responsive, professionally photographed images with automatic format and compression optimization. This guarantees crisp visuals on retina and standard displays alike without manual image processing.
 4. **No Asset Pipeline Needed** — Because this is a vanilla HTML/CSS/JS project (not a bundled React/Vite app), there is no build step to copy, hash, or optimize local assets. Remote URLs remove that complexity entirely.
-The local `assets/` folder remains part of the repository history as a reference and fallback, but the live site relies on remote sources for the best out-of-the-box experience.
+The local `assets/` folder remains part of the repository history as a reference and fallback, but the live site relies on remote sources for the best out of the box experience.
 ## Project Structure
 ```
 savour-bistros/
-├── index.html       # Full single-page markup (nav, hero, about, menu, gallery, contact, footer)
-├── styles.css       # Complete design system, layout, and responsive queries
-├── script.js        # Mobile nav toggle, IntersectionObserver scroll reveals, form handler
-└── README.md        # This file
+├── index.html        # Landing page with top nav (logo + Reserve button)
+├── about.html        # About page
+├── menu.html         # Menu page
+├── gallery.html      # Gallery page
+├── contact.html      # Contact page
+├── styles.css        # Complete design system, layout, and responsive queries
+├── script.js         # Side nav toggle, scroll reveals, form handler
+└── README.md         # This file
+
 ```
 ## Browser Support
 - Chrome / Edge (latest)
